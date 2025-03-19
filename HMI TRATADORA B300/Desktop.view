@@ -6027,115 +6027,6 @@
 }
 </script>
 </div>
-<div id="btResetEmerg" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="58" data-tchmi-height-unit="px" data-tchmi-left="36.1" data-tchmi-left-unit="%" data-tchmi-text="Button" data-tchmi-top="28.0" data-tchmi-top-unit="%" data-tchmi-width="88" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "btEsvaziarBalanca.onPressed",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%i%VAR_ResetEMG%/i%",
-        "value": {
-          "objectType": "Symbol",
-          "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%f%%i%VAR_ResetEMG%/i% + 1%/f%"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "Condition",
-        "active": true,
-        "parts": [
-          {
-            "if": [
-              {
-                "compare1": {
-                  "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/INT",
-                  "symbolExpression": "%i%VAR_ResetEMG%/i%"
-                },
-                "compare2": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/INT",
-                  "value": 5
-                },
-                "compareOperator": ">=",
-                "logic": null
-              }
-            ],
-            "then": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%i%VAR_ResetEMG%/i%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/INT",
-                  "value": 0
-                },
-                "asyncWait": true
-              },
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%s%PLC1.HMI.Restart%/s%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/BOOL",
-                  "value": true
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "else": []
-          }
-        ],
-        "asyncWait": true
-      }
-    ]
-  }
-]
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
-{
-  "color": "rgba(56, 103, 122, 0)"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
-{
-  "color": "rgba(56, 103, 122, 0)"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
-{
-  "color": "rgba(56, 103, 122, 0)"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
-[
-  {
-    "offsetX": 0.0,
-    "offsetXUnit": "px",
-    "offsetY": 0.0,
-    "offsetYUnit": "px",
-    "inset": false,
-    "blur": 0.0,
-    "blurUnit": "px",
-    "spread": 0.0,
-    "spreadUnit": "px"
-  }
-]
-</script>
-</div>
 <div id="Informacoes" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="31.2" data-tchmi-height-unit="%" data-tchmi-left="23.9" data-tchmi-left-unit="%" data-tchmi-top="8.0" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-zindex="12" data-tchmi-icon="Images/icons8-informações-64.png" data-tchmi-background-image="Images/icons8-informações-64.png" data-tchmi-width="4.2" data-tchmi-background-image-height="100" data-tchmi-background-image-height-unit="%" data-tchmi-icon-height="100" data-tchmi-icon-height-unit="%">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
@@ -6273,6 +6164,10 @@
     ]
   }
 ]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+[]
 </script>
 </div>
 </div>
