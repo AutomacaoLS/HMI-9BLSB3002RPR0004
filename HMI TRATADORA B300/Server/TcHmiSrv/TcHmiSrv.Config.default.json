@@ -5488,6 +5488,23 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L1.fbBomba_L1.ResetContadores": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L1::fbBomba_L1::ResetContadores",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "propertyOrder": 22
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L1.fbBomba_L1.ResetFalhas": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -37527,6 +37544,7 @@
                 "PLC1.Circuito_L1.ProductoAsociado": 3,
                 "PLC1.Circuito_L1.fbBomba_L1.Acionamentos": 3,
                 "PLC1.Circuito_L1.fbBomba_L1.Interlock": 3,
+                "PLC1.Circuito_L1.fbBomba_L1.ResetContadores": 3,
                 "PLC1.Circuito_L1.fbBomba_L1.ResetFalhas": 3,
                 "PLC1.Circuito_L1.fbBomba_L1.TempoFuncionando": 3,
                 "PLC1.Circuito_L10.ControlValv_ioLink_V1.TemposAcionamento.9": 3,

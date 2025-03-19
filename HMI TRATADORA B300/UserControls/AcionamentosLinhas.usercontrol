@@ -110,6 +110,15 @@
   }
 ]
 </script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiContainer_57.onPressed",
+    "actions": []
+  }
+]
+</script>
 </div>
 <div id="TcHmiContainer_58" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width="22.5" data-tchmi-width-unit="%" data-tchmi-top="67">
 <div id="TcHmiTextblock_1182" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="%f%%l%VALVULA%/l% + &quot; 1&quot;%/f%" data-tchmi-top="1" data-tchmi-top-unit="px" data-tchmi-width="90" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="18">
@@ -849,6 +858,8 @@
   }
 ]
 </script>
+
+
 </div>
 <div id="TcHmiContainer_63" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-left="26.5" data-tchmi-left-unit="%" data-tchmi-top="3" data-tchmi-top-unit="%" data-tchmi-width="71.5" data-tchmi-width-unit="%">
 <div id="TcHmiTextblock_1197" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="%l%CONSUMO_HIST_IBC%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="90" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="18">
