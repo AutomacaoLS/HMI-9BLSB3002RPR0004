@@ -6162,6 +6162,7 @@
                 "data-tchmi-qtdtratada": "%s%PLC1.DatosProceso.KgLote_Procesados%/s%",
                 "data-tchmi-tempoatualbatelada": "%f%DintToTime(%s%PLC1.Tratadora.TempoBatelada%/s%/1000)%/f%",
                 "data-tchmi-tempoatualtratamento": "%f%DintToTime(%s%PLC1.DatosProceso.TempoTratamento%/s%)%/f%",
+                "data-tchmi-tempomediobatelada": "%f%(%s%PLC1.Balanza_Semilla.TempoMedioBateladas%/s%).toFixed(1) + \" s\"%/f%",
                 "data-tchmi-qtdbatelada": "%s%PLC1.Balanza_Semilla.qtdBateladas%/s%",
                 "data-tchmi-tempoaproxtratamentototal": "%f%DintToTime(%s%PLC1.DatosProceso.TempoTotal%/s%)%/f%",
                 "data-tchmi-temporestantetratamento": "%f%DintToTime(%s%PLC1.DatosProceso.TempoRestante%/s%)%/f%"
@@ -6225,7 +6226,7 @@
               {
                 "compare1": {
                   "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/String",
+                  "valueType": "tchmi:general#/definitions/BOOL",
                   "symbolExpression": "%s%PLC1.DatosProceso.LoteCargado%/s%"
                 },
                 "compare2": {
@@ -6260,7 +6261,7 @@
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/Visibility",
-                  "value": "Hidden"
+                  "value": "Collapsed"
                 },
                 "asyncWait": true
               }

@@ -3590,6 +3590,23 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Balanza_Semilla.TempoMedioBateladas": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Balanza_Semilla::TempoMedioBateladas",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/REAL"
+                    },
+                    {
+                        "comment": "Tempo médio das bateladas"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Balanza_Semilla.qtdBateladas": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -37342,6 +37359,7 @@
                 "PLC1.Balanza_Semilla.TR_S_V3.Eventos_Parciales": 3,
                 "PLC1.Balanza_Semilla.TR_S_V3.Reset_Eventos": 3,
                 "PLC1.Balanza_Semilla.TR_S_V3.TempoAbertura": 3,
+                "PLC1.Balanza_Semilla.TempoMedioBateladas": 3,
                 "PLC1.Balanza_Semilla.qtdBateladas": 3,
                 "PLC1.BancoDeDados.ComandoSalvar": 3,
                 "PLC1.BancoDeDados.ComandoSalvar.0": 3,
