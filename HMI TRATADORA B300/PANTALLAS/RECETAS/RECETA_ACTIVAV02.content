@@ -11371,7 +11371,7 @@
 }
 </script>
 </div>
-<div id="TcHmiCombobox_67" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-auto-focus-out="true" data-tchmi-height="6" data-tchmi-height-unit="%" data-tchmi-left="14" data-tchmi-left-unit="%" data-tchmi-top="3" data-tchmi-top-unit="%" data-tchmi-width="40" data-tchmi-width-unit="%" data-tchmi-src-data="%s%PLC1.RecetasGestion.aComboboxRecipes%/s%" data-tchmi-selected-index="" data-tchmi-data-height="40" data-tchmi-max-list-height="600" data-tchmi-allow-text-input="false" data-tchmi-combobox-text="%l%SELEC_RECETA%/l%" data-tchmi-text-font-size="25" data-tchmi-selected-id="%s%PLC1.Receitas.IndiceReceita%/s%">
+<div id="TcHmiCombobox_67" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-auto-focus-out="true" data-tchmi-height="6" data-tchmi-height-unit="%" data-tchmi-left="14" data-tchmi-left-unit="%" data-tchmi-top="3" data-tchmi-top-unit="%" data-tchmi-width="40" data-tchmi-width-unit="%" data-tchmi-src-data="%s%PLC1.RecetasGestion.aComboboxRecipes%/s%" data-tchmi-selected-index="" data-tchmi-data-height="45" data-tchmi-max-list-height="600" data-tchmi-allow-text-input="false" data-tchmi-combobox-text="%l%SELEC_RECETA%/l%" data-tchmi-text-font-size="25" data-tchmi-selected-id="%s%PLC1.Receitas.IndiceReceita%/s%" data-tchmi-drop-down-font-size="20">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,

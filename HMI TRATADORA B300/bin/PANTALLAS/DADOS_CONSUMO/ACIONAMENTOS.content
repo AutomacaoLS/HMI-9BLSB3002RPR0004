@@ -1,4 +1,4 @@
-<div id="ACIONAMENTOS" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-creator-viewport-width="1024" data-tchmi-width-unit="%" data-tchmi-height-unit="%">
+<div id="ACIONAMENTOS" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-creator-viewport-width="1024" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-height="600">
 
 
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
@@ -337,7 +337,7 @@
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V1.UltimasPosicoes.1%/s%"
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V1.UltimasPosicoes.0%/s%"
         },
         "asyncWait": true
       },
@@ -348,7 +348,7 @@
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V1.UltimasPosicoes.0%/s%"
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V1.UltimasPosicoes.1%/s%"
         },
         "asyncWait": true
       },
@@ -359,7 +359,7 @@
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V2.UltimasPosicoes.1%/s%"
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V2.UltimasPosicoes.0%/s%"
         },
         "asyncWait": true
       },
@@ -370,7 +370,7 @@
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V2.UltimasPosicoes.0%/s%"
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V2.UltimasPosicoes.1%/s%"
         },
         "asyncWait": true
       },
@@ -381,7 +381,7 @@
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V3.UltimasPosicoes.1%/s%"
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V3.UltimasPosicoes.0%/s%"
         },
         "asyncWait": true
       },
@@ -392,7 +392,7 @@
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V3.UltimasPosicoes.0%/s%"
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V3.UltimasPosicoes.1%/s%"
         },
         "asyncWait": true
       },
@@ -403,7 +403,7 @@
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V4.UltimasPosicoes.1%/s%"
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V4.UltimasPosicoes.0%/s%"
         },
         "asyncWait": true
       },
@@ -414,7 +414,7 @@
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V4.UltimasPosicoes.0%/s%"
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V4.UltimasPosicoes.1%/s%"
         },
         "asyncWait": true
       },
@@ -5232,6 +5232,182 @@
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/Visibility",
           "value": "Collapsed"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2Acionamentos%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V2.qntAcionamentos%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2TempoAcionamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V2.TemposAcionamento.9%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3Acionamentos%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V3.qntAcionamentos%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3TempoAcionamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V3.TemposAcionamento.9%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4Acionamentos%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V4.qntAcionamentos%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4TempoAcionamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V4.TemposAcionamento.9%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosTratadoras::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V1.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V1.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V2.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V2.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V3.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3__Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V3.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V4.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V4.UltimasPosicoes.1%/s%"
         },
         "asyncWait": true
       }

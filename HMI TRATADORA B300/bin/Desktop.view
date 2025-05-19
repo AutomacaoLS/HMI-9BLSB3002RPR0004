@@ -903,7 +903,7 @@
 }
 </script>
 </div>
-<div id="NumericInput_KILOS_PROCESAR" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="7" data-tchmi-height-unit="%" data-tchmi-left="72" data-tchmi-left-unit="%" data-tchmi-max-value="999999" data-tchmi-min-value="1000" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="31" data-tchmi-top-unit="%" data-tchmi-value="%s%PLC1.DatosProceso.Kg_a_Procesar|BindingMode=TwoWay%/s%" data-tchmi-width="20" data-tchmi-width-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-value-font-size-unit="%" data-tchmi-value-font-size="220" data-tchmi-value-horizontal-alignment="Center" data-tchmi-auto-select-text="true" data-tchmi-ignore-invalid-values="true">
+<div id="NumericInput_KILOS_PROCESAR" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="7" data-tchmi-height-unit="%" data-tchmi-left="72" data-tchmi-left-unit="%" data-tchmi-max-value="999999" data-tchmi-min-value="100" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="31" data-tchmi-top-unit="%" data-tchmi-value="%s%PLC1.DatosProceso.Kg_a_Procesar|BindingMode=TwoWay%/s%" data-tchmi-width="20" data-tchmi-width-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-value-font-size-unit="%" data-tchmi-value-font-size="220" data-tchmi-value-horizontal-alignment="Center" data-tchmi-auto-select-text="true" data-tchmi-ignore-invalid-values="true">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -6027,115 +6027,6 @@
 }
 </script>
 </div>
-<div id="btResetEmerg" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="58" data-tchmi-height-unit="px" data-tchmi-left="36.1" data-tchmi-left-unit="%" data-tchmi-text="Button" data-tchmi-top="28.0" data-tchmi-top-unit="%" data-tchmi-width="88" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "btEsvaziarBalanca.onPressed",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%i%VAR_ResetEMG%/i%",
-        "value": {
-          "objectType": "Symbol",
-          "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%f%%i%VAR_ResetEMG%/i% + 1%/f%"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "Condition",
-        "active": true,
-        "parts": [
-          {
-            "if": [
-              {
-                "compare1": {
-                  "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/INT",
-                  "symbolExpression": "%i%VAR_ResetEMG%/i%"
-                },
-                "compare2": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/INT",
-                  "value": 5
-                },
-                "compareOperator": ">=",
-                "logic": null
-              }
-            ],
-            "then": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%i%VAR_ResetEMG%/i%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/INT",
-                  "value": 0
-                },
-                "asyncWait": true
-              },
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%s%PLC1.HMI.Restart%/s%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/BOOL",
-                  "value": true
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "else": []
-          }
-        ],
-        "asyncWait": true
-      }
-    ]
-  }
-]
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
-{
-  "color": "rgba(56, 103, 122, 0)"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
-{
-  "color": "rgba(56, 103, 122, 0)"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
-{
-  "color": "rgba(56, 103, 122, 0)"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
-[
-  {
-    "offsetX": 0.0,
-    "offsetXUnit": "px",
-    "offsetY": 0.0,
-    "offsetYUnit": "px",
-    "inset": false,
-    "blur": 0.0,
-    "blurUnit": "px",
-    "spread": 0.0,
-    "spreadUnit": "px"
-  }
-]
-</script>
-</div>
 <div id="Informacoes" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="31.2" data-tchmi-height-unit="%" data-tchmi-left="23.9" data-tchmi-left-unit="%" data-tchmi-top="8.0" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-zindex="12" data-tchmi-icon="Images/icons8-informações-64.png" data-tchmi-background-image="Images/icons8-informações-64.png" data-tchmi-width="4.2" data-tchmi-background-image-height="100" data-tchmi-background-image-height-unit="%" data-tchmi-icon-height="100" data-tchmi-icon-height-unit="%">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
@@ -6162,6 +6053,7 @@
                 "data-tchmi-qtdtratada": "%s%PLC1.DatosProceso.KgLote_Procesados%/s%",
                 "data-tchmi-tempoatualbatelada": "%f%DintToTime(%s%PLC1.Tratadora.TempoBatelada%/s%/1000)%/f%",
                 "data-tchmi-tempoatualtratamento": "%f%DintToTime(%s%PLC1.DatosProceso.TempoTratamento%/s%)%/f%",
+                "data-tchmi-tempomediobatelada": "%f%(%s%PLC1.Balanza_Semilla.TempoMedioBateladas%/s%).toFixed(1) + \" s\"%/f%",
                 "data-tchmi-qtdbatelada": "%s%PLC1.Balanza_Semilla.qtdBateladas%/s%",
                 "data-tchmi-tempoaproxtratamentototal": "%f%DintToTime(%s%PLC1.DatosProceso.TempoTotal%/s%)%/f%",
                 "data-tchmi-temporestantetratamento": "%f%DintToTime(%s%PLC1.DatosProceso.TempoRestante%/s%)%/f%"
@@ -6225,7 +6117,7 @@
               {
                 "compare1": {
                   "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/String",
+                  "valueType": "tchmi:general#/definitions/BOOL",
                   "symbolExpression": "%s%PLC1.DatosProceso.LoteCargado%/s%"
                 },
                 "compare2": {
@@ -6260,7 +6152,7 @@
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/Visibility",
-                  "value": "Hidden"
+                  "value": "Collapsed"
                 },
                 "asyncWait": true
               }
@@ -6272,6 +6164,10 @@
     ]
   }
 ]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+[]
 </script>
 </div>
 </div>

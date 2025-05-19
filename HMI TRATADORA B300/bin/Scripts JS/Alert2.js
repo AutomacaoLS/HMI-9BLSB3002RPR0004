@@ -31,7 +31,7 @@
                 var texto = $('<div>' + par1 + '</div>').css({
                     'width': '100%',
                     'height': 'auto',
-                    'font-size': '30px',
+                    'font-size': '25px',
                     'text-align': 'center',
                     'color': 'white'
                 });

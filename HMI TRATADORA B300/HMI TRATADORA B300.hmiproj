@@ -124,6 +124,9 @@
     <Content Include="Images\icons8-informações-64.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Images\PERIFERICOS\PERIFERICOS CAIXAS2.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Images\PRINCIPAL\Render LS-B300S-002.png">
       <SubType>Content</SubType>
     </Content>
@@ -138,6 +141,9 @@
       <DependentUpon>Localization\ENGLISH.tpl.localization</DependentUpon>
     </Content>
     <Content Include="Localization\ENGLISH.tpl.localization">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\CONFIG\CONFIG_141_DOSAGENS.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="PANTALLAS\CONFIG\CONFIG_iPC-INFO.content">

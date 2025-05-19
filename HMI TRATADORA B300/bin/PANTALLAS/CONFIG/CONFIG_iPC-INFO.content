@@ -744,7 +744,7 @@
 }
 </script>
 </div>
-<div id="TcHmiTextblock_1401" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="39.5" data-tchmi-left-unit="%" data-tchmi-text="%f%(%s%PLC1.iPC_Diagnostic.nCpuFreq%/s%/1000).toFixed(2) + &quot; GHz&quot;%/f%" data-tchmi-top="92" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-right-unit="%" data-tchmi-right="5">
+<div id="TcHmiTextblock_1401" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="39.5" data-tchmi-left-unit="%" data-tchmi-text="%f%(%s%PLC1.iPC_Diagnostic.nCpuFreq%/s%/1000).toFixed(2) + &quot; GHz&quot;%/f%" data-tchmi-top="93" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-right-unit="%" data-tchmi-right="5">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 0,
@@ -813,7 +813,7 @@
 }
 </script>
 </div>
-<div id="TcHmiTextblock_1404" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="55.9" data-tchmi-left-unit="%" data-tchmi-text="%f%%s%PLC1.iPC_Diagnostic.MB_Temperature%/s% + &quot; ºC&quot;%/f%" data-tchmi-top="184" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-right-unit="%" data-tchmi-right="5">
+<div id="TcHmiTextblock_1404" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="55.9" data-tchmi-left-unit="%" data-tchmi-text="%f%%s%PLC1.iPC_Diagnostic.MB_Temperature%/s% + &quot; ºC&quot;%/f%" data-tchmi-top="185" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-right-unit="%" data-tchmi-right="5">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 0,
@@ -836,7 +836,7 @@
 }
 </script>
 </div>
-<div id="ProgressBar_3" data-tchmi-type="TcHmi.Controls.Entertainment.ProgressBar" data-tchmi-height="14" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-top="159" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-orientation="Horizontal" data-tchmi-right="5" data-tchmi-right-unit="%" data-tchmi-progress="%s%PLC1.iPC_Diagnostic.CpuUsage%/s%">
+<div id="ProgressBar_3" data-tchmi-type="TcHmi.Controls.Entertainment.ProgressBar" data-tchmi-height="14" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-top="160" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-orientation="Horizontal" data-tchmi-right="5" data-tchmi-right-unit="%" data-tchmi-progress="%s%PLC1.iPC_Diagnostic.CpuUsage%/s%">
 
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
@@ -864,7 +864,34 @@
 }
 </script>
 </div>
-<div id="ProgressBar_4" data-tchmi-type="TcHmi.Controls.Entertainment.ProgressBar" data-tchmi-height="14" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-top="214" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-orientation="Horizontal" data-tchmi-right="5" data-tchmi-right-unit="%" data-tchmi-progress="%f%((%s%PLC1.iPC_Diagnostic.MB_Temperature%/s%)/%s%PLC1.iPC_Diagnostic.MB_MaxTemperature%/s%)*100%/f%">
+<div id="ProgressBar_4" data-tchmi-type="TcHmi.Controls.Entertainment.ProgressBar" data-tchmi-height="14" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-top="215" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-orientation="Horizontal" data-tchmi-right="5" data-tchmi-right-unit="%" data-tchmi-progress="%f%((%s%PLC1.iPC_Diagnostic.MB_Temperature%/s%)/%s%PLC1.iPC_Diagnostic.MB_MaxTemperature%/s%)*100%/f%">
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 0,
+  "right": 0,
+  "top": 0,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="ProgressBar_5" data-tchmi-type="TcHmi.Controls.Entertainment.ProgressBar" data-tchmi-height="14" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-top="270" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-orientation="Horizontal" data-tchmi-right="5" data-tchmi-right-unit="%" data-tchmi-progress="%f%((%s%PLC1.iPC_Diagnostic.CpuTemp%/s%)/%s%PLC1.iPC_Diagnostic.MB_MaxTemperature%/s%)*100%/f%">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 10.0,
@@ -1023,7 +1050,7 @@
 }
 </script>
 </div>
-<div id="TcHmiTextblock_1406" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="39.1" data-tchmi-left-unit="%" data-tchmi-text="%f%(%s%PLC1.iPC_Diagnostic.rDiskTotalSize%/s%-%s%PLC1.iPC_Diagnostic.rFreeDisk%/s%).toFixed(2) + &quot; GB/&quot; + %s%PLC1.iPC_Diagnostic.rDiskTotalSize%/s%.toFixed(2) + &quot; GB&quot;%/f%" data-tchmi-top="56" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-right-unit="%" data-tchmi-right="5">
+<div id="TcHmiTextblock_1406" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="39.1" data-tchmi-left-unit="%" data-tchmi-text="%f%(%s%PLC1.iPC_Diagnostic.rDiskTotalSize%/s%-%s%PLC1.iPC_Diagnostic.rFreeDisk%/s%).toFixed(2) + &quot; GB/&quot; + %s%PLC1.iPC_Diagnostic.rDiskTotalSize%/s%.toFixed(2) + &quot; GB&quot;%/f%" data-tchmi-top="57" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-right-unit="%" data-tchmi-right="5">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 0,
@@ -1069,7 +1096,7 @@
 }
 </script>
 </div>
-<div id="TcHmiTextblock_1408" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="51.2" data-tchmi-left-unit="%" data-tchmi-text="%s%PLC1.iPC_Diagnostic.UPSBattStatus%/s%" data-tchmi-top="204" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-right-unit="%" data-tchmi-right="5">
+<div id="TcHmiTextblock_1408" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="51.2" data-tchmi-left-unit="%" data-tchmi-text="%s%PLC1.iPC_Diagnostic.UPSBattStatus%/s%" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-right-unit="%" data-tchmi-right="5">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 0,
@@ -1092,7 +1119,7 @@
 }
 </script>
 </div>
-<div id="ProgressBar" data-tchmi-type="TcHmi.Controls.Entertainment.ProgressBar" data-tchmi-height="14" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-top="86" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-orientation="Horizontal" data-tchmi-progress="%f%((%s%PLC1.iPC_Diagnostic.rDiskTotalSize%/s%-%s%PLC1.iPC_Diagnostic.rFreeDisk%/s%)/%s%PLC1.iPC_Diagnostic.rDiskTotalSize%/s%)*100%/f%" data-tchmi-right="5" data-tchmi-right-unit="%">
+<div id="ProgressBar" data-tchmi-type="TcHmi.Controls.Entertainment.ProgressBar" data-tchmi-height="14" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-top="87" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-orientation="Horizontal" data-tchmi-progress="%f%((%s%PLC1.iPC_Diagnostic.rDiskTotalSize%/s%-%s%PLC1.iPC_Diagnostic.rFreeDisk%/s%)/%s%PLC1.iPC_Diagnostic.rDiskTotalSize%/s%)*100%/f%" data-tchmi-right="5" data-tchmi-right-unit="%">
 
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
@@ -1143,7 +1170,7 @@
 }
 </script>
 </div>
-<div id="TcHmiTextblock_1405" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="55.9" data-tchmi-left-unit="%" data-tchmi-top="110" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-right-unit="%" data-tchmi-right="5" data-tchmi-text="%f%(%s%PLC1.iPC_Diagnostic.rTotalRAM%/s%-%s%PLC1.iPC_Diagnostic.rFreeRAM%/s%).toFixed(2) + &quot; GB/&quot; + %s%PLC1.iPC_Diagnostic.rTotalRAM%/s%.toFixed(2) + &quot; GB&quot;%/f%">
+<div id="TcHmiTextblock_1405" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="55.9" data-tchmi-left-unit="%" data-tchmi-top="111" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-right-unit="%" data-tchmi-right="5" data-tchmi-text="%f%(%s%PLC1.iPC_Diagnostic.rTotalRAM%/s%-%s%PLC1.iPC_Diagnostic.rFreeRAM%/s%).toFixed(2) + &quot; GB/&quot; + %s%PLC1.iPC_Diagnostic.rTotalRAM%/s%.toFixed(2) + &quot; GB&quot;%/f%">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 0,
@@ -1166,7 +1193,7 @@
 }
 </script>
 </div>
-<div id="ProgressBar_1" data-tchmi-type="TcHmi.Controls.Entertainment.ProgressBar" data-tchmi-height="14" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-orientation="Horizontal" data-tchmi-progress="%f%(%s%PLC1.iPC_Diagnostic.rTotalRAM%/s%-%s%PLC1.iPC_Diagnostic.rFreeRAM%/s%)/(%s%PLC1.iPC_Diagnostic.rTotalRAM%/s%)*100%/f%" data-tchmi-right-unit="%" data-tchmi-right="5">
+<div id="ProgressBar_1" data-tchmi-type="TcHmi.Controls.Entertainment.ProgressBar" data-tchmi-height="14" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-top="141" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-orientation="Horizontal" data-tchmi-progress="%f%(%s%PLC1.iPC_Diagnostic.rTotalRAM%/s%-%s%PLC1.iPC_Diagnostic.rFreeRAM%/s%)/(%s%PLC1.iPC_Diagnostic.rTotalRAM%/s%)*100%/f%" data-tchmi-right-unit="%" data-tchmi-right="5">
 
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {

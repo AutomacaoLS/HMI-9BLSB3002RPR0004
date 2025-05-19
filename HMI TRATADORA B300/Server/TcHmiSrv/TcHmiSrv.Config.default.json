@@ -91,6 +91,15 @@
             "startOffset": 1,
             "type": "array"
         },
+        "PLC1.ARRAY_1..20_OF-REAL": {
+            "items": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "maxItems": 20,
+            "minItems": 20,
+            "startOffset": 1,
+            "type": "array"
+        },
         "PLC1.ARRAY_1..2_OF-REAL": {
             "items": {
                 "$ref": "tchmi:general#/definitions/REAL"
@@ -124,6 +133,15 @@
             },
             "maxItems": 4,
             "minItems": 4,
+            "startOffset": 1,
+            "type": "array"
+        },
+        "PLC1.ARRAY_1..5_OF-ARRAY_1..20_OF-REAL": {
+            "items": {
+                "$ref": "#/definitions/PLC1.ARRAY_1..20_OF-REAL"
+            },
+            "maxItems": 5,
+            "minItems": 5,
             "startOffset": 1,
             "type": "array"
         },
@@ -19587,6 +19605,40 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.HMI.SelecionaBigBag1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::HMI::SelecionaBigBag1",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Permite descarga no bigbag1"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.HMI.SelecionaBigBag2": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::HMI::SelecionaBigBag2",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "DESCARGA NO BIGBAG2"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.HMI.StAlarma_PC1_L1_BD": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
@@ -29773,6 +29825,801 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.RegistroDosagens.Datagrid": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::Datagrid",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "comment": "Tabela com os dados para serem mostrados no datagrid"
+                    },
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..5_OF-ARRAY_1..20_OF-REAL"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorCalibr": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorCalibr",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "comment": "Quantidade de produto dosada através do sensor do totem de calibração"
+                    },
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..20_OF-REAL"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorCalibr.10": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorCalibr[10]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorCalibr.11": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorCalibr[11]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorCalibr.12": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorCalibr[12]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorCalibr.13": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorCalibr[13]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorCalibr.14": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorCalibr[14]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorCalibr.15": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorCalibr[15]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorCalibr.16": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorCalibr[16]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorCalibr.17": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorCalibr[17]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorCalibr.18": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorCalibr[18]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorCalibr.19": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorCalibr[19]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorCalibr.6": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorCalibr[6]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorCalibr.7": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorCalibr[7]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorCalibr.8": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorCalibr[8]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorCalibr.9": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorCalibr[9]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorTrat": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorTrat",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "comment": "Quantidade de produto dosada através do sensor da tratadora"
+                    },
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..20_OF-REAL"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorTrat.10": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorTrat[10]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorTrat.11": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorTrat[11]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorTrat.12": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorTrat[12]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorTrat.13": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorTrat[13]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorTrat.14": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorTrat[14]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorTrat.15": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorTrat[15]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorTrat.16": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorTrat[16]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorTrat.17": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorTrat[17]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorTrat.18": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorTrat[18]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorTrat.19": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorTrat[19]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorTrat.6": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorTrat[6]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorTrat.7": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorTrat[7]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorTrat.8": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorTrat[8]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DoseSensorTrat.9": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DoseSensorTrat[9]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DosesEsperadas": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DosesEsperadas",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "comment": "Dose esperada colocada na receita"
+                    },
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..20_OF-REAL"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DosesEsperadas.10": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DosesEsperadas[10]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DosesEsperadas.11": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DosesEsperadas[11]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DosesEsperadas.12": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DosesEsperadas[12]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DosesEsperadas.13": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DosesEsperadas[13]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DosesEsperadas.14": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DosesEsperadas[14]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DosesEsperadas.15": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DosesEsperadas[15]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DosesEsperadas.16": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DosesEsperadas[16]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DosesEsperadas.17": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DosesEsperadas[17]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DosesEsperadas.18": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DosesEsperadas[18]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DosesEsperadas.19": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DosesEsperadas[19]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DosesEsperadas.6": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DosesEsperadas[6]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DosesEsperadas.7": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DosesEsperadas[7]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DosesEsperadas.8": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DosesEsperadas[8]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.DosesEsperadas.9": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::DosesEsperadas[9]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.Erro.10": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::Erro[10]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.Erro.11": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::Erro[11]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.Erro.12": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::Erro[12]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.Erro.13": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::Erro[13]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.Erro.14": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::Erro[14]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.Erro.15": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::Erro[15]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.Erro.16": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::Erro[16]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.Erro.17": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::Erro[17]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.Erro.18": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::Erro[18]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.Erro.19": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::Erro[19]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.Erro.6": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::Erro[6]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.Erro.7": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::Erro[7]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.Erro.8": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::Erro[8]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.Erro.9": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::Erro[9]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.ErroPercentual.10": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::ErroPercentual[10]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.ErroPercentual.11": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::ErroPercentual[11]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.ErroPercentual.12": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::ErroPercentual[12]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.ErroPercentual.13": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::ErroPercentual[13]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.ErroPercentual.14": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::ErroPercentual[14]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.ErroPercentual.15": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::ErroPercentual[15]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.ErroPercentual.16": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::ErroPercentual[16]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.ErroPercentual.17": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::ErroPercentual[17]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.ErroPercentual.18": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::ErroPercentual[18]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.ErroPercentual.19": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::ErroPercentual[19]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.ErroPercentual.6": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::ErroPercentual[6]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.ErroPercentual.7": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::ErroPercentual[7]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.ErroPercentual.8": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::ErroPercentual[8]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.ErroPercentual.9": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::ErroPercentual[9]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.NomeProduto": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::NomeProduto",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                    },
+                    {
+                        "comment": "Nome do produto associado a linha"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.RegistroDosagens.iControle": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::RegistroDosagens::iControle",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/INT"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Salidas.TR_S_V1": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
@@ -38451,6 +39298,8 @@
                 "PLC1.HMI.PU_Lav_V6_estado": 3,
                 "PLC1.HMI.PararLavagem": 3,
                 "PLC1.HMI.Restart": 3,
+                "PLC1.HMI.SelecionaBigBag1": 3,
+                "PLC1.HMI.SelecionaBigBag2": 3,
                 "PLC1.HMI.StAlarma_PC1_L1_BD": 3,
                 "PLC1.HMI.StAlarma_PC1_L2_BD": 3,
                 "PLC1.HMI.StAlarma_PC1_L3_BD": 3,
@@ -39116,6 +39965,82 @@
                 "PLC1.RecetasGestion.RecetaEditar.SetCircuitosLiq": 3,
                 "PLC1.RecetasGestion.aComboboxEntries": 3,
                 "PLC1.RecetasGestion.aComboboxRecipes": 3,
+                "PLC1.RegistroDosagens.Datagrid": 3,
+                "PLC1.RegistroDosagens.DoseSensorCalibr": 3,
+                "PLC1.RegistroDosagens.DoseSensorCalibr.10": 3,
+                "PLC1.RegistroDosagens.DoseSensorCalibr.11": 3,
+                "PLC1.RegistroDosagens.DoseSensorCalibr.12": 3,
+                "PLC1.RegistroDosagens.DoseSensorCalibr.13": 3,
+                "PLC1.RegistroDosagens.DoseSensorCalibr.14": 3,
+                "PLC1.RegistroDosagens.DoseSensorCalibr.15": 3,
+                "PLC1.RegistroDosagens.DoseSensorCalibr.16": 3,
+                "PLC1.RegistroDosagens.DoseSensorCalibr.17": 3,
+                "PLC1.RegistroDosagens.DoseSensorCalibr.18": 3,
+                "PLC1.RegistroDosagens.DoseSensorCalibr.19": 3,
+                "PLC1.RegistroDosagens.DoseSensorCalibr.6": 3,
+                "PLC1.RegistroDosagens.DoseSensorCalibr.7": 3,
+                "PLC1.RegistroDosagens.DoseSensorCalibr.8": 3,
+                "PLC1.RegistroDosagens.DoseSensorCalibr.9": 3,
+                "PLC1.RegistroDosagens.DoseSensorTrat": 3,
+                "PLC1.RegistroDosagens.DoseSensorTrat.10": 3,
+                "PLC1.RegistroDosagens.DoseSensorTrat.11": 3,
+                "PLC1.RegistroDosagens.DoseSensorTrat.12": 3,
+                "PLC1.RegistroDosagens.DoseSensorTrat.13": 3,
+                "PLC1.RegistroDosagens.DoseSensorTrat.14": 3,
+                "PLC1.RegistroDosagens.DoseSensorTrat.15": 3,
+                "PLC1.RegistroDosagens.DoseSensorTrat.16": 3,
+                "PLC1.RegistroDosagens.DoseSensorTrat.17": 3,
+                "PLC1.RegistroDosagens.DoseSensorTrat.18": 3,
+                "PLC1.RegistroDosagens.DoseSensorTrat.19": 3,
+                "PLC1.RegistroDosagens.DoseSensorTrat.6": 3,
+                "PLC1.RegistroDosagens.DoseSensorTrat.7": 3,
+                "PLC1.RegistroDosagens.DoseSensorTrat.8": 3,
+                "PLC1.RegistroDosagens.DoseSensorTrat.9": 3,
+                "PLC1.RegistroDosagens.DosesEsperadas": 3,
+                "PLC1.RegistroDosagens.DosesEsperadas.10": 3,
+                "PLC1.RegistroDosagens.DosesEsperadas.11": 3,
+                "PLC1.RegistroDosagens.DosesEsperadas.12": 3,
+                "PLC1.RegistroDosagens.DosesEsperadas.13": 3,
+                "PLC1.RegistroDosagens.DosesEsperadas.14": 3,
+                "PLC1.RegistroDosagens.DosesEsperadas.15": 3,
+                "PLC1.RegistroDosagens.DosesEsperadas.16": 3,
+                "PLC1.RegistroDosagens.DosesEsperadas.17": 3,
+                "PLC1.RegistroDosagens.DosesEsperadas.18": 3,
+                "PLC1.RegistroDosagens.DosesEsperadas.19": 3,
+                "PLC1.RegistroDosagens.DosesEsperadas.6": 3,
+                "PLC1.RegistroDosagens.DosesEsperadas.7": 3,
+                "PLC1.RegistroDosagens.DosesEsperadas.8": 3,
+                "PLC1.RegistroDosagens.DosesEsperadas.9": 3,
+                "PLC1.RegistroDosagens.Erro.10": 3,
+                "PLC1.RegistroDosagens.Erro.11": 3,
+                "PLC1.RegistroDosagens.Erro.12": 3,
+                "PLC1.RegistroDosagens.Erro.13": 3,
+                "PLC1.RegistroDosagens.Erro.14": 3,
+                "PLC1.RegistroDosagens.Erro.15": 3,
+                "PLC1.RegistroDosagens.Erro.16": 3,
+                "PLC1.RegistroDosagens.Erro.17": 3,
+                "PLC1.RegistroDosagens.Erro.18": 3,
+                "PLC1.RegistroDosagens.Erro.19": 3,
+                "PLC1.RegistroDosagens.Erro.6": 3,
+                "PLC1.RegistroDosagens.Erro.7": 3,
+                "PLC1.RegistroDosagens.Erro.8": 3,
+                "PLC1.RegistroDosagens.Erro.9": 3,
+                "PLC1.RegistroDosagens.ErroPercentual.10": 3,
+                "PLC1.RegistroDosagens.ErroPercentual.11": 3,
+                "PLC1.RegistroDosagens.ErroPercentual.12": 3,
+                "PLC1.RegistroDosagens.ErroPercentual.13": 3,
+                "PLC1.RegistroDosagens.ErroPercentual.14": 3,
+                "PLC1.RegistroDosagens.ErroPercentual.15": 3,
+                "PLC1.RegistroDosagens.ErroPercentual.16": 3,
+                "PLC1.RegistroDosagens.ErroPercentual.17": 3,
+                "PLC1.RegistroDosagens.ErroPercentual.18": 3,
+                "PLC1.RegistroDosagens.ErroPercentual.19": 3,
+                "PLC1.RegistroDosagens.ErroPercentual.6": 3,
+                "PLC1.RegistroDosagens.ErroPercentual.7": 3,
+                "PLC1.RegistroDosagens.ErroPercentual.8": 3,
+                "PLC1.RegistroDosagens.ErroPercentual.9": 3,
+                "PLC1.RegistroDosagens.NomeProduto": 3,
+                "PLC1.RegistroDosagens.iControle": 3,
                 "PLC1.Salidas.TR_S_V1": 3,
                 "PLC1.Salidas.TR_S_V2": 3,
                 "PLC1.Salidas.TR_S_V3": 3,

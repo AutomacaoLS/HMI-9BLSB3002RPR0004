@@ -2,6 +2,7 @@
     "CERTIFICATEEXPIRATION": "P14000D",
     "REQUIREAUTH": 2,
     "VIRTUALDIRECTORIES": {
-        "/": "www"
+        "/": "www",
+        "/Beckhoff.TwinCAT.HMI.ScopeControl": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.ScopeControl.12.762.46\\runtimes\\native1.12-tchmi"
     }
 }

@@ -144,6 +144,13 @@
   ],
   "content": [
     {
+      "url": "PANTALLAS/CONFIG/CONFIG_141_DOSAGENS.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
       "url": "PANTALLAS/CONFIG/CONFIG_iPC-INFO.content",
       "preload": false,
       "keepAlive": false,

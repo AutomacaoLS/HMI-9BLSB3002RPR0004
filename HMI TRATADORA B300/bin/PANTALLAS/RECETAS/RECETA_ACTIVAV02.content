@@ -11371,7 +11371,7 @@
 }
 </script>
 </div>
-<div id="TcHmiCombobox_67" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-auto-focus-out="true" data-tchmi-height="6" data-tchmi-height-unit="%" data-tchmi-left="14" data-tchmi-left-unit="%" data-tchmi-top="3" data-tchmi-top-unit="%" data-tchmi-width="40" data-tchmi-width-unit="%" data-tchmi-src-data="%s%PLC1.RecetasGestion.aComboboxRecipes%/s%" data-tchmi-selected-index="" data-tchmi-data-height="40" data-tchmi-max-list-height="600" data-tchmi-allow-text-input="false" data-tchmi-combobox-text="%l%SELEC_RECETA%/l%" data-tchmi-text-font-size="25" data-tchmi-selected-id="%s%PLC1.Receitas.IndiceReceita%/s%">
+<div id="TcHmiCombobox_67" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-auto-focus-out="true" data-tchmi-height="6" data-tchmi-height-unit="%" data-tchmi-left="14" data-tchmi-left-unit="%" data-tchmi-top="3" data-tchmi-top-unit="%" data-tchmi-width="40" data-tchmi-width-unit="%" data-tchmi-src-data="%s%PLC1.RecetasGestion.aComboboxRecipes%/s%" data-tchmi-selected-index="" data-tchmi-data-height="45" data-tchmi-max-list-height="600" data-tchmi-allow-text-input="false" data-tchmi-combobox-text="%l%SELEC_RECETA%/l%" data-tchmi-text-font-size="25" data-tchmi-selected-id="%s%PLC1.Receitas.IndiceReceita%/s%" data-tchmi-drop-down-font-size="20">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -13913,7 +13913,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiNumericInput_43" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="1" data-tchmi-height="6" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="47" data-tchmi-top-unit="%" data-tchmi-width="80" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size-unit="%" data-tchmi-value-font-size="140" data-tchmi-auto-select-text="true" data-tchmi-ignore-invalid-values="true" data-tchmi-value="%s%PLC1.Receta_Activa.interfaceSetTmrHomogenizado|BindingMode=TwoWay%/s%" data-tchmi-system-keyboard-input-mode="numeric">
+<div id="TcHmiNumericInput_43" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="1" data-tchmi-height="6" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="42" data-tchmi-top-unit="%" data-tchmi-width="80" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size-unit="%" data-tchmi-value-font-size="140" data-tchmi-auto-select-text="true" data-tchmi-ignore-invalid-values="true" data-tchmi-value="%s%PLC1.Receta_Activa.interfaceSetTmrHomogenizado|BindingMode=TwoWay%/s%" data-tchmi-system-keyboard-input-mode="numeric">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -14023,7 +14023,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiNumericInput_44" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="1" data-tchmi-height="6" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="59" data-tchmi-top-unit="%" data-tchmi-width="80" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size-unit="%" data-tchmi-value-font-size="140" data-tchmi-auto-select-text="true" data-tchmi-ignore-invalid-values="true" data-tchmi-value="%s%PLC1.Receta_Activa.interfaceSetTmrDescarga|BindingMode=TwoWay%/s%" data-tchmi-system-keyboard-input-mode="numeric">
+<div id="TcHmiNumericInput_44" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="1" data-tchmi-height="6" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="54" data-tchmi-top-unit="%" data-tchmi-width="80" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size-unit="%" data-tchmi-value-font-size="140" data-tchmi-auto-select-text="true" data-tchmi-ignore-invalid-values="true" data-tchmi-value="%s%PLC1.Receta_Activa.interfaceSetTmrDescarga|BindingMode=TwoWay%/s%" data-tchmi-system-keyboard-input-mode="numeric">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -14147,21 +14147,21 @@
 }
 </script>
 </div>
-<div id="TcHmiTextblock_1145" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-text="%l%TIEMPO_HOMOG%/l%" data-tchmi-top="42" data-tchmi-top-unit="%" data-tchmi-width="80" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="120">
+<div id="TcHmiTextblock_1145" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-text="%l%TIEMPO_HOMOG%/l%" data-tchmi-top="37" data-tchmi-top-unit="%" data-tchmi-width="80" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="120">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(217, 183, 52, 1)"
 }
 </script>
 </div>
-<div id="TcHmiTextblock_1146" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-text="%l%TIEMPO_DESCARGA%/l%" data-tchmi-top="54" data-tchmi-top-unit="%" data-tchmi-width="80" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="120">
+<div id="TcHmiTextblock_1146" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-text="%l%TIEMPO_DESCARGA%/l%" data-tchmi-top="49" data-tchmi-top-unit="%" data-tchmi-width="80" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="120">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(217, 183, 52, 1)"
 }
 </script>
 </div>
-<div id="TcHmiTextblock_1147" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="9" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-text="%l%TIEMPO_ESTIMADO_TOTAL%/l%" data-tchmi-top="70" data-tchmi-top-unit="%" data-tchmi-width="80" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="130">
+<div id="TcHmiTextblock_1147" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="9" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-text="%l%TIEMPO_ESTIMADO_TOTAL%/l%" data-tchmi-top="70.9" data-tchmi-top-unit="%" data-tchmi-width="80" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="130">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(217, 183, 52, 1)"
@@ -14178,7 +14178,7 @@
   }
 ]
 </script>
-<div id="TcHmiTextblock_1154" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="6" data-tchmi-height-unit="%" data-tchmi-left="10.1" data-tchmi-left-unit="%" data-tchmi-text="%f%%s%PLC1.Receta_Activa.interfaceSetTiempoTotal%/s%.toFixed(0) + &quot; s&quot;%/f%" data-tchmi-top="80.7" data-tchmi-top-unit="%" data-tchmi-width="80" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="140" data-tchmi-text-font-size-unit="%">
+<div id="TcHmiTextblock_1154" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="6" data-tchmi-height-unit="%" data-tchmi-left="10.1" data-tchmi-left-unit="%" data-tchmi-text="%f%%s%PLC1.Receta_Activa.interfaceSetTiempoTotal%/s%.toFixed(0) + &quot; s&quot;%/f%" data-tchmi-top="81" data-tchmi-top-unit="%" data-tchmi-width="80" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="140" data-tchmi-text-font-size-unit="%">
 
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
 {
@@ -14210,6 +14210,15 @@
   }
 ]
 </script>
+</div>
+<div id="TcHmiTextblock_1409" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5.7" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-text="%l%HABILITA_ASPIRACAO%/l%" data-tchmi-top="62" data-tchmi-top-unit="%" data-tchmi-width="56.2" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="120">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(217, 183, 52, 1)"
+}
+</script>
+</div>
+<div id="TcHmiCheckbox_15" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCheckbox" data-tchmi-height="5.7" data-tchmi-height-unit="%" data-tchmi-left="65.5" data-tchmi-left-unit="%" data-tchmi-top="62" data-tchmi-top-unit="%" data-tchmi-width="24.5" data-tchmi-width-unit="%" data-tchmi-state-symbol="%s%PLC1.Receta_Activa.interfaceSetAspiracao|BindingMode=TwoWay%/s%">
 </div>
 </div>
 </div>

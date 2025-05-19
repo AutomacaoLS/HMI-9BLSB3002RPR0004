@@ -2073,7 +2073,7 @@
 }
 </script>
 </div>
-<div id="TcHmiTextblock_164" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width="20" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Top" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="180" data-tchmi-ignore-escape-sequences="true" data-tchmi-right="0" data-tchmi-bottom="55" data-tchmi-zindex="4" data-tchmi-text="%f%%s%PLC1.Liquidos.Circuito_Offset.2%/s%.toFixed(2)%/f%">
+<div id="TcHmiTextblock_164" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width="20" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Top" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="180" data-tchmi-ignore-escape-sequences="true" data-tchmi-right="0" data-tchmi-bottom="55" data-tchmi-zindex="4" data-tchmi-text="%f%%s%PLC1.Liquidos.Circuito_Offset.2%/s%.toFixed(3)%/f%">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(0, 0, 0, 1)"
@@ -3916,6 +3916,22 @@
             ]
           }
         ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "Button_NOMBRE_BOMBAL01_2.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.Circuito_L3.fbBomba_L3.ResetFalhas%/s%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/BOOL",
+          "value": true
+        },
         "asyncWait": true
       }
     ]

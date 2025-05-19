@@ -4,7 +4,59 @@
     <RecentColors>[
   {
     "counter": 0,
+    "color": "#FFCDCCCC"
+  },
+  {
+    "counter": 0,
+    "color": "#FFAFAFAF"
+  },
+  {
+    "counter": 0,
+    "color": "#FF3E3E3E"
+  },
+  {
+    "counter": 0,
+    "color": "#FF585858"
+  },
+  {
+    "counter": 0,
+    "color": "#FF9F9F9F"
+  },
+  {
+    "counter": 0,
+    "color": "#FF343440"
+  },
+  {
+    "counter": 0,
     "color": "#FFFFFFFF"
+  },
+  {
+    "counter": 0,
+    "color": "#FF9494EF"
+  },
+  {
+    "counter": 0,
+    "color": "#FF8181CD"
+  },
+  {
+    "counter": 0,
+    "color": "#FF6F6FC1"
+  },
+  {
+    "counter": 0,
+    "color": "#FF7E7EE3"
+  },
+  {
+    "counter": 0,
+    "color": "#FFC1C1FD"
+  },
+  {
+    "counter": 0,
+    "color": "#FFDBDBDB"
+  },
+  {
+    "counter": 0,
+    "color": "#FF194B69"
   },
   {
     "counter": 0,
@@ -12,75 +64,23 @@
   },
   {
     "counter": 0,
-    "color": "#FFFF0000"
+    "color": "#32FFFFFF"
   },
   {
     "counter": 0,
-    "color": "#FF380303"
+    "color": "#05FFFFFF"
   },
   {
     "counter": 0,
-    "color": "#FF4E0404"
+    "color": "#B4535353"
   },
   {
     "counter": 0,
-    "color": "#FF5F0404"
+    "color": "#FFFBF0F0"
   },
   {
     "counter": 0,
-    "color": "#FF9E0808"
-  },
-  {
-    "counter": 0,
-    "color": "#FFC60000"
-  },
-  {
-    "counter": 0,
-    "color": "#FFEDEDED"
-  },
-  {
-    "counter": 0,
-    "color": "#FFC8B6B6"
-  },
-  {
-    "counter": 0,
-    "color": "#FFAA8E8E"
-  },
-  {
-    "counter": 0,
-    "color": "#FFC6C6C6"
-  },
-  {
-    "counter": 0,
-    "color": "#FF939393"
-  },
-  {
-    "counter": 0,
-    "color": "#FFE8E8E8"
-  },
-  {
-    "counter": 0,
-    "color": "#FFFFE902"
-  },
-  {
-    "counter": 0,
-    "color": "#FFFFEE33"
-  },
-  {
-    "counter": 0,
-    "color": "#FFDEFF34"
-  },
-  {
-    "counter": 0,
-    "color": "#FFA5FF34"
-  },
-  {
-    "counter": 0,
-    "color": "#FF92F417"
-  },
-  {
-    "counter": 0,
-    "color": "#FF8AF417"
+    "color": "#19FFFFFF"
   }
 ]</RecentColors>
     <TcHmiEditor_SelectBindingWindowDimension>489;195;958;672</TcHmiEditor_SelectBindingWindowDimension>
@@ -331,7 +331,7 @@
       "Orientation": "Horizontal",
       "DesignAreaPosition": "Left",
       "CodeAreaPosition": "Right",
-      "SplitPercentage": 0.5
+      "SplitPercentage": 1.0217391304347827
     },
     {
       "Path": "PANTALLAS\\LIQUIDOS1\\LIQUIDOS_L09.content",
@@ -515,6 +515,15 @@
     },
     {
       "Path": "PANTALLAS\\CONFIG\\CONFIG_iPC-INFO.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\CONFIG\\CONFIG_141_DOSAGENS.content",
       "DesignAreaSplitSize": "Full",
       "CodeAreaSplitSize": "Minimized",
       "Orientation": "Horizontal",
